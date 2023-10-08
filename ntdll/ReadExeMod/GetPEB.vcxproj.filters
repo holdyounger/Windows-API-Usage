@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="GetPEB.cpp">
+    <ClCompile Include="ReadExeMod.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
