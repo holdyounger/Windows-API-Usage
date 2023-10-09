@@ -9,7 +9,6 @@
  *        Created by  mingming.shi on Jan. 24th, 2022
  *
  *************************************************************************/
-#include "StdAfx.h"
 #include "WLPortPool.h"
 #include <process.h>
 
@@ -67,7 +66,7 @@ unsigned int WINAPI scanSysDynamicPortsNum(void* lpParam);
 * @author		mingming.shi
 * @date			2022-1-24
 */
-void WINAPI WNTPORT::getPort(__out STU_PORT_POOL& stuPort)
+void WINAPI WNTPORT::GetFreePort(__out STU_PORT_POOL& stuPort)
 {
 	int iRet = -1;
 	std::vector<STU_PORT_POOL>::iterator it = g_stuPortPool.begin();
@@ -111,6 +110,7 @@ void WINAPI WNTPORT::getPort(__out STU_PORT_POOL& stuPort)
 		i++;
 	}
 
+	return ;
 }
 
 /*

@@ -88,7 +88,7 @@ extern "C" {
 		void killScanPortsThread();
 
 		/* 返回一个可用端口和其范围 */
-		void WINAPI getPort(__out STU_PORT_POOL& stuPort);
+		void WINAPI GetFreePort(__out STU_PORT_POOL& stuPort);
 
 		/* 返回端口池状态 */
 		bool WINAPI getPortPoolStatus();

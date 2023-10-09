@@ -15,8 +15,22 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="SimpleSocketClient.cpp">
+    <ClCompile Include="dumpcreate.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="dump_create\exception_report.cc">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dump_create\generate_mini_dump_win.cc">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="dump_create\exception_report.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="dump_create\generate_mini_dump_win.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

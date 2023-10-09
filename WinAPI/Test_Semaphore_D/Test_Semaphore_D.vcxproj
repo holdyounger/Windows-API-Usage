@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{fa6cc0cc-3ebd-4226-b20f-c0f10c98cf8a}</ProjectGuid>
-    <RootNamespace>HideWindows</RootNamespace>
+    <ProjectGuid>{4D132D90-BEFA-4103-8DB6-F209F542A6A1}</ProjectGuid>
+    <RootNamespace>TestSemaphoreD</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="HideWindows.cpp" />
+    <ClCompile Include="Test_Semaphore_D.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
