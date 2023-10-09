@@ -5,6 +5,8 @@
 NTSTATUS UnloadDriver(PDRIVER_OBJECT pDriver)
 {
 	DbgPrint("Bye, Driver");
+
+	return STATUS_SUCCESS;
 }
 
 NTSTATUS DriverEntry(PDRIVER_OBJECT pDriver, PUNICODE_STRING pReg)
