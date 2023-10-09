@@ -1,5 +1,14 @@
-﻿// GetPEB.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
-//
+﻿/**************************************************************************
+ *
+ *        Copyright (C) 2023
+ *        All rights reserved
+ *
+ *        Filename    :	GetPEB.cpp
+ *        Description : 获取进程的PEB
+ *
+ *        Created by  mingming.shi on 2023年10月9日
+ *
+ *************************************************************************/
 
 #include <iostream>
 

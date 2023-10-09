@@ -1,5 +1,15 @@
 ﻿// GetProceccEnv.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
-//
+/**************************************************************************
+ *
+ *        Copyright (C) 2023
+ *        All rights reserved
+ *
+ *        Filename    :	GetProcessEnv.cpp
+ *        Description : 获取进程的环境变量
+ *
+ *        Created by  mingming.shi 2023年10月9日
+ *
+ *************************************************************************/
 
 #include <iostream>
 #include <Windows.h>
