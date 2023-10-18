@@ -1,4 +1,4 @@
-#include <windows.h>
+ï»¿#include <windows.h>
 #include <iostream>
 #include <tlhelp32.h>
 
@@ -35,14 +35,14 @@ bool EnableDebugPrivilege()
 
 	HANDLE token;
 	TOKEN_PRIVILEGES tp;
-	// ´ò¿ª½ø³ÌÁîÅÆ»·
+	// æ‰“å¼€è¿›ç¨‹ä»¤ç‰ŒçŽ¯
 	if (!OpenProcessToken(GetCurrentProcess(), TOKEN_ADJUST_PRIVILEGES | TOKEN_QUERY, &token))
 	{
 		cout << "Open Toekn Failed" << endl;
 		return bRet;
 	}
 
-	// »ñÈ¡½ø³Ìuuid
+	// èŽ·å–è¿›ç¨‹uuid
 	LUID luid;
 	if (!LookupPrivilegeValue(NULL, SE_DEBUG_NAME, &luid))
 	{
@@ -54,7 +54,7 @@ bool EnableDebugPrivilege()
 	tp.Privileges[0].Attributes = SE_PRIVILEGE_ENABLED;
 	tp.Privileges[0].Luid = luid;
 
-	// µ÷Õû½ø³ÌÈ¨ÏÞ
+	// è°ƒæ•´è¿›ç¨‹æƒé™
 	if (!AdjustTokenPrivileges(token, 0, &tp, sizeof(TOKEN_PRIVILEGES), NULL, NULL))
 	{
 		cout << "Adjust Privilege failed" << endl;
@@ -68,10 +68,10 @@ bool EnableDebugPrivilege()
 
 int main(char* argc, const char* argv[])
 {
-	// ÏÈÌáÈ¨
+	// å…ˆææƒ
 	if (!EnableDebugPrivilege())
 	{
-		cout << "ÌáÈ¨Ê§°Ü" << endl;
+		cout << "ææƒå¤±è´¥" << endl;
 		return 0;
 	}
 
@@ -82,7 +82,7 @@ int main(char* argc, const char* argv[])
 		return 0;
 	}
 
-	// ´ò¿ªÄ¿±ê½ø³Ì
+	// æ‰“å¼€ç›®æ ‡è¿›ç¨‹
 	HANDLE hTarget = OpenProcess(PROCESS_ALL_ACCESS, false, dwTargetPid);
 	if (!hTarget)
 	{
@@ -90,7 +90,7 @@ int main(char* argc, const char* argv[])
 		return 0;
 	}
 
-	// ÔÚÄ¿±ê½ø³ÌÉêÇëÄÚ´æ
+	// åœ¨ç›®æ ‡è¿›ç¨‹ç”³è¯·å†…å­˜
 	void* pLoadLibFuncParam = nullptr;
 	pLoadLibFuncParam = VirtualAllocEx(hTarget, 0, 4096, MEM_COMMIT | MEM_RESERVE, PAGE_READWRITE);
 	if (pLoadLibFuncParam == nullptr)
@@ -100,39 +100,44 @@ int main(char* argc, const char* argv[])
 		return 0;
 	}
 
+	// åœ¨ç”³è¯·çš„å†…å­˜ä¸­å†™å…¥æ•°æ®
 	LPCTSTR lpParam = L"C:\\6\\SimpleDll.dll";
 	if (!WriteProcessMemory(hTarget, pLoadLibFuncParam, (LPCVOID)lpParam, (wcslen(lpParam) + 1) * sizeof(TCHAR), NULL))
 	{
-		cout << "Ð´ÈëÄÚ´æÊ§°Ü" << endl;
+		cout << "å†™å…¥å†…å­˜å¤±è´¥" << endl;
 		CloseHandle(hTarget);
 		return 0;
 	}
+
+	// èŽ·å– LoadLibraryW å‡½æ•°çš„åœ°å€
 	HMODULE hNtdll = LoadLibrary(L"kernel32.dll");
 	if (!hNtdll)
 	{
-		cout << "¼ÓÔØÄ£¿é´íÎó" << GetLastError() << endl;
+		cout << "åŠ è½½æ¨¡å—é”™è¯¯" << GetLastError() << endl;
 		CloseHandle(hTarget);
 		return 0;
 	}
-	cout << "Ä£¿é¾ä±ú: " << hNtdll << endl;
+	cout << "æ¨¡å—å¥æŸ„: " << hNtdll << endl;
 	void* pLoadLibrary = nullptr;
 	pLoadLibrary = GetProcAddress(hNtdll, "LoadLibraryW");
 	if (pLoadLibrary == nullptr)
 	{
-		cout << "ÕÒ²»µ½º¯Êý" << endl;
+		cout << "æ‰¾ä¸åˆ°å‡½æ•°" << endl;
 		CloseHandle(hTarget);
 		return 0;
 	}
-	cout << "º¯ÊýµØÖ·: " << pLoadLibrary << endl;
+	cout << "å‡½æ•°åœ°å€: " << pLoadLibrary << endl;
+
+	// åœ¨ç›®æ ‡è¿›ç¨‹ä¸­åˆ›å»ºçº¿ç¨‹ LoadLibraryW 
 	DWORD dwThreadId = 0;
 	HANDLE hRemoteThread = CreateRemoteThread(hTarget, NULL, 0, (LPTHREAD_START_ROUTINE)pLoadLibrary, (LPVOID)pLoadLibFuncParam, 0, &dwThreadId);
 	if (!hRemoteThread)
 	{
-		cout << "´´½¨½ø³ÌÊ§°Ü" << GetLastError() << endl;
+		cout << "åˆ›å»ºè¿›ç¨‹å¤±è´¥" << GetLastError() << endl;
 		CloseHandle(hTarget);
 		return 0;
 	}
-	cout << "ÔËÐÐ½áÊø" << hRemoteThread << endl;
+	cout << "è¿è¡Œç»“æŸ" << hRemoteThread << endl;
 	getchar();
 	getchar();
 	CloseHandle(hTarget);
