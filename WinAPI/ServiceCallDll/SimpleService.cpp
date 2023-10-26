@@ -1,7 +1,5 @@
-#include <windows.h>
-#include <tchar.h>
-#include <strsafe.h>
-#include <atlstr.h>
+#include "define.h"
+#include "InjectDll.h"
 
 #define MyServiceName L"MyService"
 
@@ -84,7 +82,7 @@ DWORD __stdcall MyServiceHandlerEx(DWORD  dwControl, DWORD  dwEventType, LPVOID 
 // 执行一些初始化过程
 DWORD MyServiceInitialization(DWORD  dwArgc, LPTSTR* lpszArgv)
 {
-    OutputDebugStringA("------------------Start----------------");
+    OutputDebugStringA("--------Start-------");
 
     return NO_ERROR;
 }
@@ -92,41 +90,11 @@ DWORD MyServiceInitialization(DWORD  dwArgc, LPTSTR* lpszArgv)
 // 服务工作执行函数
 DWORD MyServiceWorker(DWORD dwArgc, LPTSTR* lpszArgv)
 {
-    HINSTANCE hDLL; // Handle to DLL
-    using Face = void (*)();
+    OutputDebugStringA("-------Work-------");
 
-    hDLL = LoadLibrary(L"CallMysqlDll.dll");
-    OutputDebugStringA("------------------LoadLibrary----------------");
-    if (hDLL != NULL)
-    {
-        OutputDebugStringA("------------------LoadLibrary Success----------------");
-
-        Face faceSum = (Face)GetProcAddress(hDLL,
-            "ConnMySQL");
-
-        if (!faceSum)
-        {
-            // handle the error
-            OutputDebugStringA("------------------LoadLibrary Call Function Failed----------------");
-            FreeLibrary(hDLL);
-            return 0;
-        }
-        else
-        {
-            OutputDebugStringA("------------------LoadLibrary Call Function----------------");
-            // call the function
-            // faceSum();
-        }
-    }
-    else
-    {
-        OutputDebugStringA("------------------LoadLibrary failed----------------");
-        DWORD error = GetLastError();
-        CString strError = "";
-        strError.Format(L"----------------GetLastError=%d", error);
-        OutputDebugString(strError.GetBuffer());
-
-    }
+    InjectDll idl("mysqld.exe", "C:\\Users\\testm\\Desktop\\test\\MYSQLPLUGIN64.dll");
+    idl.SetCheckEnvValue("MYSQLD_WINDOWS_SERVICE");
+    idl.Inject();
 
     return 0;
 }

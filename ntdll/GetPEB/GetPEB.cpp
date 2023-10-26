@@ -12,8 +12,8 @@
 
 #include <iostream>
 
-#include<Windows.h>
-#include<iostream>
+#include <Windows.h>
+#include <iostream>
 #include <Strsafe.h>
 using namespace std;
 

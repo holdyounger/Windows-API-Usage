@@ -3,7 +3,8 @@
 
 #include <iostream>
 #include <Windows.h>
-
+#include <atlstr.h>
+#include <psapi.h>
 #pragma comment(lib, "Kernel32.lib")
 
 /* *********************
@@ -35,9 +36,23 @@ void getUSN()
 	printf("ExistingCompletionPort(%d)\nCompletionKey(%d)\nNumberOfConcurrentThreads(%d)\n", ExistingCompletionPort, CompletionKey, NumberOfConcurrentThreads);
 }
 
+static inline CString log_current_process()
+{
+	WCHAR process_name[MAX_PATH]{ 0 };
+	DWORD len = GetModuleBaseNameW(GetCurrentProcess(), NULL, process_name,
+		MAX_PATH);
+	if (len > 0) {
+		process_name[len] = 0;
+	}
+
+	return process_name;
+}
 
 int main(int argc, char* argv[])
 {
+	CString Name;
+	Name = log_current_process();
+
 	getUSN();
 	return 0;
 }

@@ -21,10 +21,9 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{e50bb767-4257-424a-8e45-35de7cff702a}</ProjectGuid>
-    <RootNamespace>CreateServiceRegisterServiceCtrlHandler</RootNamespace>
+    <ProjectGuid>{38502258-c46d-4553-a69a-80144a642f1f}</ProjectGuid>
+    <RootNamespace>GetEnvironmentStringsW</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>ServiceDispatch</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -74,10 +73,9 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
-      <SDLCheck>true</SDLCheck>
+      <SDLCheck>false</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -106,7 +104,6 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -130,16 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="define.h" />
-    <ClCompile Include="InjectDll.cpp" />
-    <ClCompile Include="LoadMySqlFun.cpp" />
-    <ClCompile Include="ProcessHelper.cpp" />
-    <ClCompile Include="SimpleService.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="InjectDll.h" />
-    <ClInclude Include="LoadMySqlFun.h" />
-    <ClInclude Include="ProcessHelper.h" />
+    <ClCompile Include="GetEnvirmentStrings.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

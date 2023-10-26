@@ -15,31 +15,8 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="SimpleService.cpp">
+    <ClCompile Include="SHChangeNotifyRegistr.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="LoadMySqlFun.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="define.h">
-      <Filter>头文件</Filter>
-    </ClCompile>
-    <ClCompile Include="InjectDll.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="ProcessHelper.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="LoadMySqlFun.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="InjectDll.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="ProcessHelper.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>
