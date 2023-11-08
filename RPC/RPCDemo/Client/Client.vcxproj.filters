@@ -18,12 +18,12 @@
     <ClCompile Include="rpcclient.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="hello_c.c">
+    <ClCompile Include="..\RpcComplier\hello_c.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="hello_h.h">
+    <ClInclude Include="..\RpcComplier\hello_h.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

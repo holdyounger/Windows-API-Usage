@@ -4,7 +4,7 @@
 using namespace std;
 
 
-#include "hello_h.h"
+#include "../RpcComplier/hello_h.h"
 
 #pragma comment(lib,"Rpcrt4.lib")
 

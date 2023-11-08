@@ -15,16 +15,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="hello_h.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="hello_s.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="rpcserver.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="..\RpcComplier\hello_s.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\RpcComplier\hello_h.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
