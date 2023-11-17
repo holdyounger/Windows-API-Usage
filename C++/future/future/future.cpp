@@ -32,5 +32,7 @@ int main() {
     // int result = result_future.get();
     // std::cout << "Final result: " << result << std::endl;
 
+    getchar();
+
     return 0;
 }

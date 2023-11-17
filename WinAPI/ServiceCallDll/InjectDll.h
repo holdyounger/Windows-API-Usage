@@ -13,6 +13,12 @@ class InjectDll
 		TYPE_NAME = 0,
 		TYPE_PID
 	};
+public:
+	enum INJECT_TYPE {
+		INJECT_REMOTE_THREAD = 0,
+		INJECT_ZW_CREATETH,
+		INJECT_NT_CREATETH,
+	};
 
 public:
 
@@ -21,7 +27,7 @@ public:
 
 	void SetCheckEnvValue(CString name, CString value = "") { m_envName = name; m_envValue = value; };
 
-	BOOL Inject();
+	BOOL Inject(INJECT_TYPE tpye = INJECT_REMOTE_THREAD);
 
 private:
 

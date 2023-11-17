@@ -144,7 +144,7 @@ BOOL GetProcessEnvByPid_Wow64(DWORD dwPid, CString& strEnvName, CString& strEnvV
 	PROCESS_BASIC_INFORMATION_WOW64 pbi = {};
 	ULONG ProcPramFlags = 0;
 	static HMODULE hNtdll = NULL;
-	static LPFN_NTWOW64WRITEVIRTUALMEMORY64 fnNtQueryInformationProcess = NULL;
+	static _NtQueryInformationProcess fnNtQueryInformationProcess = NULL;
 	static _NtWow64ReadVirtualMemory64 fnNtReadVirtualMemory64 = NULL;
 
 	do {
@@ -158,7 +158,7 @@ BOOL GetProcessEnvByPid_Wow64(DWORD dwPid, CString& strEnvName, CString& strEnvV
 
 		if (!fnNtQueryInformationProcess)
 		{
-			fnNtQueryInformationProcess = (LPFN_NTWOW64WRITEVIRTUALMEMORY64)GetProcAddress(hNtdll, "NtWow64QueryInformationProcess64");
+			fnNtQueryInformationProcess = (_NtQueryInformationProcess)GetProcAddress(hNtdll, "NtWow64QueryInformationProcess64");
 			if (!fnNtQueryInformationProcess)
 			{
 				Debug_Error(L"[NtWow64QueryInformationProcess64] Failed, GetLastError[%d]", GetLastError());
@@ -185,11 +185,11 @@ BOOL GetProcessEnvByPid_Wow64(DWORD dwPid, CString& strEnvName, CString& strEnvV
 			break;
 		}
 
-		ULONG64 dwSize = 0;
+		ULONG dwSize = 0;
 		LONG status = fnNtQueryInformationProcess(hProcess, ProcessBasicInformation, &pbi, sizeof(pbi), &dwSize);
+		if(ERROR_SUCCESS != status)
 		{
 			Debug_Error(L"[NtWow64QueryInformationProcess64] NtQueryInformationProcess fail = [%08x]", status);
-			break;
 		}
 
 		PVOID64 pAddrPEB = pbi.PebBaseAddress;
@@ -233,12 +233,12 @@ BOOL GetProcessEnvByPid_Wow64(DWORD dwPid, CString& strEnvName, CString& strEnvV
 						strEnvValue = ptr + strEnvName.GetLength() + 1;
 						strEnvValue.Trim();
 						Debug_Error(L"{%S] target : %S, value : %d", __FUNCTIONW__, strEnvName, strEnvValue);
+						bRet = TRUE;
 						break;
 					}
 
 					ptr += wcslen(ptr) + 1;
 				}
-				bRet = TRUE;
 			}
 			else
 			{

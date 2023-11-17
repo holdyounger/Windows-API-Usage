@@ -82,7 +82,7 @@ DWORD __stdcall MyServiceHandlerEx(DWORD  dwControl, DWORD  dwEventType, LPVOID 
 // 执行一些初始化过程
 DWORD MyServiceInitialization(DWORD  dwArgc, LPTSTR* lpszArgv)
 {
-    OutputDebugStringA("--------Start-------");
+    Debug_Run(L"[%s]-------Start", __FUNCTIONW__);
 
     return NO_ERROR;
 }
@@ -90,11 +90,12 @@ DWORD MyServiceInitialization(DWORD  dwArgc, LPTSTR* lpszArgv)
 // 服务工作执行函数
 DWORD MyServiceWorker(DWORD dwArgc, LPTSTR* lpszArgv)
 {
-    OutputDebugStringA("-------Work-------");
+    Debug_Run(L"[%s]-------Work", __FUNCTIONW__);
 
-    InjectDll idl("mysqld.exe", "C:\\Users\\testm\\Desktop\\test\\MYSQLPLUGIN64.dll");
+    // InjectDll idl("mysqld.exe", "C:\\Users\\testm\\Desktop\\test\\MYSQLPLUGIN64.dll");
+    InjectDll idl(5552, "C:\\MYSQLPLUGIN64.dll");
     idl.SetCheckEnvValue("MYSQLD_WINDOWS_SERVICE");
-    idl.Inject();
+    idl.Inject(InjectDll::INJECT_NT_CREATETH);
 
     return 0;
 }
