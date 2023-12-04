@@ -26,5 +26,8 @@
     <ClInclude Include="..\RpcComplier\hello_h.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="DebugTrace.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
