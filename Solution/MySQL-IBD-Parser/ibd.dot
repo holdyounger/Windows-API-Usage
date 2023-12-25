@@ -1,0 +1,103 @@
+digraph D {
+    node [fontname="Microsoft Yahei"];
+    node [shape=plaintext]
+    labelloc="t"
+    rankdir="LR"
+    IBD [label=<
+    <table border='0' cellborder='1' color='black' cellspacing='0'>
+        <tr>
+            <td width="10" border='0'></td>
+            <td width="250" border='0'><b>Basic Page Overview</b></td>
+        </tr>
+        <tr>
+            <td border='0'>
+                <table border="0" color='black' cellspacing='0'>
+                    <tr><td align="right">0</td></tr>
+                    <tr><td></td></tr>
+                    <tr><td align="right">38</td></tr>
+                </table>  
+            </td>
+            <td>File Header(38)</td>
+        </tr>        
+        <tr>
+            <td border='0'>
+            </td>
+            <td colspan='1' height="50" port="fbody">Other Headers and page data,<br/> depending on page type</td>
+        </tr>
+        <tr>
+            <td border='0'>
+                <table border="0" color='black' cellspacing='0'>
+                    <tr><td align="right">16376</td></tr>
+                    <tr><td></td></tr>
+                    <tr><td align="right">16384</td></tr>
+                </table>  
+            </td>
+            <td>File Trailer(8)</td>
+        </tr>
+    </table>
+    >];
+
+    IBDHT [label=<
+    <table  border='0' cellborder='1' color='black' cellspacing='0'>
+<tr>
+            <td width="10" border='0'></td>
+            <td width="250" border='0'><b>FILHeader/Trailer</b></td>
+        </tr>
+        <tr>
+            <td border='0' rowspan='30'>
+                <table border="0" color='black' cellspacing='0'>
+                    <tr><td align="right">0</td></tr>
+                    <tr><td align="right">4</td></tr>
+                    <tr><td align="right">8</td></tr>
+                    <tr><td align="right">12</td></tr>
+                    <tr><td align="right">16</td></tr>
+                    <tr><td align="right">24</td></tr>
+                    <tr><td align="right">26</td></tr>
+                    <tr><td align="right">34</td></tr>
+                    <tr><td align="right">38</td></tr>
+                    <tr><td align="right"></td></tr>
+                    <tr><td align="right">16376</td></tr>
+                    <tr><td align="right">16380</td></tr>
+                    <tr><td align="right">16384</td></tr>
+                </table>  
+            </td>
+            <td>Checksum (4)</td>
+        </tr>
+        <tr>
+            <td>Offset (Page Number) (4)</td>
+        </tr>
+        <tr>
+            <td>Previous Page (4)</td>
+        </tr>
+        <tr>
+            <td>Next Page (4)</td>
+        </tr>
+        <tr>
+            <td>LSN for Last page modification (8)</td>
+        </tr>
+        <tr>
+            <td>Page Type (2)</td>
+        </tr>
+        <tr>
+            <td>Flush LSN (0 except space 0 page) (8)</td>
+        </tr>
+        <tr>
+            <td>Space ID (4)</td>
+        </tr>
+        <tr rowspan='5'>
+            <td >...</td>
+        </tr>
+        <tr>
+            <td>Old-style Checksum (4)</td>
+        </tr>
+        <tr>
+            <td>Low 32 bits of LSN (4)</td>
+        </tr>
+    </table>
+    >];
+
+    fontname="Microsoft Yahei"
+    label="ibd 文件结构";
+
+    IBD -> IBDHT
+}
