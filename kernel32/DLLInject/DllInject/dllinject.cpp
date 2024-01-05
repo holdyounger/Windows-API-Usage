@@ -75,7 +75,7 @@ int main(char* argc, const char* argv[])
 		return 0;
 	}
 
-	DWORD dwTargetPid = GetPidByName(L"notepad.exe");
+	DWORD dwTargetPid = GetPidByName(L"postgres.exe");
 	if (!dwTargetPid)
 	{
 		cout << "Get Target Process Id failed" << endl;
