@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{63f28b0f-0ce8-4ff1-9af5-12dbaf72d76e}</ProjectGuid>
-    <RootNamespace>ReadPostgreSQL</RootNamespace>
+    <ProjectGuid>{9b70514d-afba-4ae4-aefb-88f85ef2ea9a}</ProjectGuid>
+    <RootNamespace>EncryptSensitiveString</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -80,6 +80,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -127,7 +128,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ReadPostgreSQL.cpp" />
+    <ClCompile Include="EncryptSensitiveString.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="hideImport.h" />
+    <ClInclude Include="obfuscation.h" />
+    <ClInclude Include="strobf.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
