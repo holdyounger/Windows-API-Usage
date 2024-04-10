@@ -1,12 +1,55 @@
 ﻿// 通过正则方式查找文件
 #include <Windows.h>
+#include <atlstr.h>
 #include <iostream>
 
 #include <shlwapi.h>
 
 #pragma comment(lib,"Shlwapi.lib")
 
-int main() {
+void GetTempDir()
+{
+    UINT uRetVal = 0;
+    TCHAR lpTempPathBuffer[MAX_PATH];
+    DWORD dwRetVal = 0;
+
+    dwRetVal = GetTempPath(MAX_PATH,          // length of the buffer
+        lpTempPathBuffer); // buffer for path 
+    if (dwRetVal > MAX_PATH || (dwRetVal == 0))
+    {
+        printf(("GetTempPath failed"));
+    }
+}
+
+static inline void GetNewFileName(const CString& path, __out CString& name) {
+    int nSaveIdx = 1;
+    CString sTempZipFilePath = path;
+    CString sRetName;
+    CString strFileName = path.Right(path.GetLength() - path.ReverseFind('\\') - 1);
+    CString strZipFileName = strFileName.Left(strFileName.ReverseFind(L'.'));
+    CString sExt = name.Right(name.GetLength() - name.ReverseFind('.') - 1);
+    CString sFileName = name.Left(name.ReverseFind('.'));
+
+    sTempZipFilePath.AppendFormat(L"%s", name);
+    while (PathFileExistsW(sTempZipFilePath))
+    {
+        sRetName.Format(L"%s(%d).%s", sFileName, nSaveIdx++, sExt);
+
+        // 压缩文件
+        sTempZipFilePath = path;
+        sTempZipFilePath.Append(sRetName);
+    }
+
+    name = sRetName;
+}
+
+int main() 
+{
+    CString name = "future.exe";
+    GetNewFileName("C:\\rdbg\\123.exe", name);
+
+    GetTempDir();
+
     // 定义文件查找句柄和查找条件  
     WIN32_FIND_DATAA findData;
     HANDLE hFind = INVALID_HANDLE_VALUE;
