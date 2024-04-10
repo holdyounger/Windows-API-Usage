@@ -1,0 +1,1288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="lzma2107">
+      <UniqueIdentifier>{81b73ba6-1b69-4f05-bec5-fecd0fb43956}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lzma2107\C">
+      <UniqueIdentifier>{f8b1a5dd-b4b3-4f47-a7ce-e1ec4a7e187b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lzma2107\CPP">
+      <UniqueIdentifier>{2b14615e-8a4f-4f62-96fe-00b662c8a2d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lzma2107\CPP\Common">
+      <UniqueIdentifier>{99477de3-e505-4d67-88bf-9bf4b2e3efcf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lzma2107\CPP\Windows">
+      <UniqueIdentifier>{36f90846-1ede-4909-b4c2-83d4a829aea8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lzma2107\CPP\7zip">
+      <UniqueIdentifier>{54641aaf-a0a3-411b-ac9d-c41a447e4238}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lzma2107\CPP\7zip\Archive">
+      <UniqueIdentifier>{c090c01d-9a42-402b-8945-6fd831b569bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lzma2107\CPP\7zip\Common">
+      <UniqueIdentifier>{5c49a9b3-244b-46c4-829f-efd3e16e268a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lzma2107\CPP\7zip\Compress">
+      <UniqueIdentifier>{88284925-ba7a-4494-8915-64ba3962c92d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lzma2107\CPP\7zip\Archive\7z">
+      <UniqueIdentifier>{39ea5a36-e73b-468b-9522-5c477e846ce9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lzma2107\CPP\7zip\Archive\common">
+      <UniqueIdentifier>{8b4ee414-47cb-48d1-b4e7-e5e8decb2c33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lzma2107\CPP\7zip\Crypto">
+      <UniqueIdentifier>{3d76fc95-d7fd-4d27-85c4-3fab0b589816}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lzma2107\CPP\7zip\Archive\Zip">
+      <UniqueIdentifier>{64f58b64-225c-4626-b91d-12bc40db8d27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lzma2107\C\zstd">
+      <UniqueIdentifier>{72c2eb90-11cf-4420-a1cc-90148ecacd36}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="7zHelper.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="7zHelperTest.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\7zAlloc.c">
+      <Filter>lzma2107\C</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\7zArcIn.c">
+      <Filter>lzma2107\C</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\7zBuf.c">
+      <Filter>lzma2107\C</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\7zBuf2.c">
+      <Filter>lzma2107\C</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\7zCrc.c">
+      <Filter>lzma2107\C</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\7zCrcOpt.c">
+      <Filter>lzma2107\C</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\7zDec.c">
+      <Filter>lzma2107\C</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\7zFile.c">
+      <Filter>lzma2107\C</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\7zStream.c">
+      <Filter>lzma2107\C</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\Aes.c">
+      <Filter>lzma2107\C</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\AesOpt.c">
+      <Filter>lzma2107\C</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\Alloc.c">
+      <Filter>lzma2107\C</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\Bcj2.c">
+      <Filter>lzma2107\C</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\Bcj2Enc.c">
+      <Filter>lzma2107\C</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\Bra.c">
+      <Filter>lzma2107\C</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\Bra86.c">
+      <Filter>lzma2107\C</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\BraIA64.c">
+      <Filter>lzma2107\C</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\CpuArch.c">
+      <Filter>lzma2107\C</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\Delta.c">
+      <Filter>lzma2107\C</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\DllSecur.c">
+      <Filter>lzma2107\C</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\LzFind.c">
+      <Filter>lzma2107\C</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\LzFindMt.c">
+      <Filter>lzma2107\C</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\LzFindOpt.c">
+      <Filter>lzma2107\C</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\Lzma2Dec.c">
+      <Filter>lzma2107\C</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\Lzma2DecMt.c">
+      <Filter>lzma2107\C</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\Lzma2Enc.c">
+      <Filter>lzma2107\C</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\Lzma86Dec.c">
+      <Filter>lzma2107\C</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\Lzma86Enc.c">
+      <Filter>lzma2107\C</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\LzmaDec.c">
+      <Filter>lzma2107\C</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\LzmaEnc.c">
+      <Filter>lzma2107\C</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\LzmaLib.c">
+      <Filter>lzma2107\C</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\MtCoder.c">
+      <Filter>lzma2107\C</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\MtDec.c">
+      <Filter>lzma2107\C</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\Ppmd7.c">
+      <Filter>lzma2107\C</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\Ppmd7Dec.c">
+      <Filter>lzma2107\C</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\Ppmd7Enc.c">
+      <Filter>lzma2107\C</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\Sha256.c">
+      <Filter>lzma2107\C</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\Sha256Opt.c">
+      <Filter>lzma2107\C</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\Sort.c">
+      <Filter>lzma2107\C</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\Threads.c">
+      <Filter>lzma2107\C</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\Xz.c">
+      <Filter>lzma2107\C</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\XzCrc64.c">
+      <Filter>lzma2107\C</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\XzCrc64Opt.c">
+      <Filter>lzma2107\C</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\XzDec.c">
+      <Filter>lzma2107\C</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\XzEnc.c">
+      <Filter>lzma2107\C</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\XzIn.c">
+      <Filter>lzma2107\C</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Archive\ArchiveExports.cpp">
+      <Filter>lzma2107\CPP\7zip\Archive</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Archive\DllExports2.cpp">
+      <Filter>lzma2107\CPP\7zip\Archive</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Archive\7z\7zCompressionMode.cpp">
+      <Filter>lzma2107\CPP\7zip\Archive\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Archive\7z\7zDecode.cpp">
+      <Filter>lzma2107\CPP\7zip\Archive\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Archive\7z\7zEncode.cpp">
+      <Filter>lzma2107\CPP\7zip\Archive\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Archive\7z\7zExtract.cpp">
+      <Filter>lzma2107\CPP\7zip\Archive\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Archive\7z\7zFolderInStream.cpp">
+      <Filter>lzma2107\CPP\7zip\Archive\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Archive\7z\7zHandler.cpp">
+      <Filter>lzma2107\CPP\7zip\Archive\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Archive\7z\7zHandlerOut.cpp">
+      <Filter>lzma2107\CPP\7zip\Archive\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Archive\7z\7zHeader.cpp">
+      <Filter>lzma2107\CPP\7zip\Archive\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Archive\7z\7zIn.cpp">
+      <Filter>lzma2107\CPP\7zip\Archive\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Archive\7z\7zOut.cpp">
+      <Filter>lzma2107\CPP\7zip\Archive\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Archive\7z\7zProperties.cpp">
+      <Filter>lzma2107\CPP\7zip\Archive\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Archive\7z\7zRegister.cpp">
+      <Filter>lzma2107\CPP\7zip\Archive\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Archive\7z\7zSpecStream.cpp">
+      <Filter>lzma2107\CPP\7zip\Archive\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Archive\7z\7zUpdate.cpp">
+      <Filter>lzma2107\CPP\7zip\Archive\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Archive\Common\CoderMixer2.cpp">
+      <Filter>lzma2107\CPP\7zip\Archive\common</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Archive\Common\DummyOutStream.cpp">
+      <Filter>lzma2107\CPP\7zip\Archive\common</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Archive\Common\HandlerOut.cpp">
+      <Filter>lzma2107\CPP\7zip\Archive\common</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Archive\Common\InStreamWithCRC.cpp">
+      <Filter>lzma2107\CPP\7zip\Archive\common</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Archive\Common\ItemNameUtils.cpp">
+      <Filter>lzma2107\CPP\7zip\Archive\common</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Archive\Common\MultiStream.cpp">
+      <Filter>lzma2107\CPP\7zip\Archive\common</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Archive\Common\OutStreamWithCRC.cpp">
+      <Filter>lzma2107\CPP\7zip\Archive\common</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Archive\Common\ParseProperties.cpp">
+      <Filter>lzma2107\CPP\7zip\Archive\common</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Common\CreateCoder.cpp">
+      <Filter>lzma2107\CPP\7zip\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Common\CWrappers.cpp">
+      <Filter>lzma2107\CPP\7zip\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Common\FilePathAutoRename.cpp">
+      <Filter>lzma2107\CPP\7zip\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Common\FileStreams.cpp">
+      <Filter>lzma2107\CPP\7zip\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Common\FilterCoder.cpp">
+      <Filter>lzma2107\CPP\7zip\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Common\InBuffer.cpp">
+      <Filter>lzma2107\CPP\7zip\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Common\InOutTempBuffer.cpp">
+      <Filter>lzma2107\CPP\7zip\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Common\LimitedStreams.cpp">
+      <Filter>lzma2107\CPP\7zip\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Common\LockedStream.cpp">
+      <Filter>lzma2107\CPP\7zip\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Common\MethodId.cpp">
+      <Filter>lzma2107\CPP\7zip\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Common\MethodProps.cpp">
+      <Filter>lzma2107\CPP\7zip\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Common\OffsetStream.cpp">
+      <Filter>lzma2107\CPP\7zip\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Common\OutBuffer.cpp">
+      <Filter>lzma2107\CPP\7zip\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Common\ProgressUtils.cpp">
+      <Filter>lzma2107\CPP\7zip\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Common\PropId.cpp">
+      <Filter>lzma2107\CPP\7zip\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Common\StreamBinder.cpp">
+      <Filter>lzma2107\CPP\7zip\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Common\StreamObjects.cpp">
+      <Filter>lzma2107\CPP\7zip\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Common\StreamUtils.cpp">
+      <Filter>lzma2107\CPP\7zip\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Common\UniqBlocks.cpp">
+      <Filter>lzma2107\CPP\7zip\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Common\VirtThread.cpp">
+      <Filter>lzma2107\CPP\7zip\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Compress\Bcj2Coder.cpp">
+      <Filter>lzma2107\CPP\7zip\Compress</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Compress\Bcj2Register.cpp">
+      <Filter>lzma2107\CPP\7zip\Compress</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Compress\BcjCoder.cpp">
+      <Filter>lzma2107\CPP\7zip\Compress</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Compress\BcjRegister.cpp">
+      <Filter>lzma2107\CPP\7zip\Compress</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Compress\BranchMisc.cpp">
+      <Filter>lzma2107\CPP\7zip\Compress</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Compress\BranchRegister.cpp">
+      <Filter>lzma2107\CPP\7zip\Compress</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Compress\ByteSwap.cpp">
+      <Filter>lzma2107\CPP\7zip\Compress</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Compress\CodecExports.cpp">
+      <Filter>lzma2107\CPP\7zip\Compress</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Compress\CopyCoder.cpp">
+      <Filter>lzma2107\CPP\7zip\Compress</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Compress\CopyRegister.cpp">
+      <Filter>lzma2107\CPP\7zip\Compress</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Compress\DeltaFilter.cpp">
+      <Filter>lzma2107\CPP\7zip\Compress</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Compress\Lzma2Decoder.cpp">
+      <Filter>lzma2107\CPP\7zip\Compress</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Compress\Lzma2Encoder.cpp">
+      <Filter>lzma2107\CPP\7zip\Compress</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Compress\Lzma2Register.cpp">
+      <Filter>lzma2107\CPP\7zip\Compress</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Compress\LzmaDecoder.cpp">
+      <Filter>lzma2107\CPP\7zip\Compress</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Compress\LzmaEncoder.cpp">
+      <Filter>lzma2107\CPP\7zip\Compress</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Compress\LzmaRegister.cpp">
+      <Filter>lzma2107\CPP\7zip\Compress</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Compress\PpmdDecoder.cpp">
+      <Filter>lzma2107\CPP\7zip\Compress</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Compress\PpmdEncoder.cpp">
+      <Filter>lzma2107\CPP\7zip\Compress</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Compress\PpmdRegister.cpp">
+      <Filter>lzma2107\CPP\7zip\Compress</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Compress\XzDecoder.cpp">
+      <Filter>lzma2107\CPP\7zip\Compress</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Compress\XzEncoder.cpp">
+      <Filter>lzma2107\CPP\7zip\Compress</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\Common\CRC.cpp">
+      <Filter>lzma2107\CPP\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\Common\CrcReg.cpp">
+      <Filter>lzma2107\CPP\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\Common\IntToString.cpp">
+      <Filter>lzma2107\CPP\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\Common\LzFindPrepare.cpp">
+      <Filter>lzma2107\CPP\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\Common\MyString.cpp">
+      <Filter>lzma2107\CPP\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\Common\MyVector.cpp">
+      <Filter>lzma2107\CPP\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\Common\NewHandler.cpp">
+      <Filter>lzma2107\CPP\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\Common\StringConvert.cpp">
+      <Filter>lzma2107\CPP\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\Common\StringToInt.cpp">
+      <Filter>lzma2107\CPP\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\Common\Wildcard.cpp">
+      <Filter>lzma2107\CPP\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\Windows\FileDir.cpp">
+      <Filter>lzma2107\CPP\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\Windows\FileFind.cpp">
+      <Filter>lzma2107\CPP\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\Windows\FileIO.cpp">
+      <Filter>lzma2107\CPP\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\Windows\PropVariant.cpp">
+      <Filter>lzma2107\CPP\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\Windows\Synchronization.cpp">
+      <Filter>lzma2107\CPP\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\Windows\System.cpp">
+      <Filter>lzma2107\CPP\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\Windows\FileName.cpp">
+      <Filter>lzma2107\CPP\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Crypto\7zAes.cpp">
+      <Filter>lzma2107\CPP\7zip\Crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Crypto\7zAesRegister.cpp">
+      <Filter>lzma2107\CPP\7zip\Crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Crypto\MyAes.cpp">
+      <Filter>lzma2107\CPP\7zip\Crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Crypto\MyAesReg.cpp">
+      <Filter>lzma2107\CPP\7zip\Crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Crypto\RandGen.cpp">
+      <Filter>lzma2107\CPP\7zip\Crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Archive\Zip\ZipAddCommon.cpp">
+      <Filter>lzma2107\CPP\7zip\Archive\Zip</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Archive\Zip\ZipHandler.cpp">
+      <Filter>lzma2107\CPP\7zip\Archive\Zip</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Archive\Zip\ZipHandlerOut.cpp">
+      <Filter>lzma2107\CPP\7zip\Archive\Zip</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Archive\Zip\ZipIn.cpp">
+      <Filter>lzma2107\CPP\7zip\Archive\Zip</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Archive\Zip\ZipItem.cpp">
+      <Filter>lzma2107\CPP\7zip\Archive\Zip</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Archive\Zip\ZipOut.cpp">
+      <Filter>lzma2107\CPP\7zip\Archive\Zip</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Archive\Zip\ZipRegister.cpp">
+      <Filter>lzma2107\CPP\7zip\Archive\Zip</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Archive\Zip\ZipUpdate.cpp">
+      <Filter>lzma2107\CPP\7zip\Archive\Zip</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Compress\PpmdZip.cpp">
+      <Filter>lzma2107\CPP\7zip\Compress</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Compress\ImplodeDecoder.cpp">
+      <Filter>lzma2107\CPP\7zip\Compress</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\Ppmd8.c">
+      <Filter>lzma2107\C</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Crypto\WzAes.cpp">
+      <Filter>lzma2107\CPP\7zip\Crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Crypto\Pbkdf2HmacSha1.cpp">
+      <Filter>lzma2107\CPP\7zip\Crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Crypto\HmacSha1.cpp">
+      <Filter>lzma2107\CPP\7zip\Crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Crypto\ZipCrypto.cpp">
+      <Filter>lzma2107\CPP\7zip\Crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Crypto\ZipStrong.cpp">
+      <Filter>lzma2107\CPP\7zip\Crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\Sha1.c">
+      <Filter>lzma2107\C</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Compress\ImplodeHuffmanDecoder.cpp">
+      <Filter>lzma2107\CPP\7zip\Compress</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Compress\LzOutWindow.cpp">
+      <Filter>lzma2107\CPP\7zip\Compress</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Compress\ShrinkDecoder.cpp">
+      <Filter>lzma2107\CPP\7zip\Compress</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Compress\BitlDecoder.cpp">
+      <Filter>lzma2107\CPP\7zip\Compress</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Common\OutMemStream.cpp">
+      <Filter>lzma2107\CPP\7zip\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Common\ProgressMt.cpp">
+      <Filter>lzma2107\CPP\7zip\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Common\MemBlocks.cpp">
+      <Filter>lzma2107\CPP\7zip\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\Common\UTFConvert.cpp">
+      <Filter>lzma2107\CPP\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Archive\XzHandler.cpp">
+      <Filter>lzma2107\CPP\7zip\Archive</Filter>
+    </ClCompile>
+    <ClCompile Include="ZipHelper.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\Windows\TimeUtils.cpp">
+      <Filter>lzma2107\CPP\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Compress\ZstdEncoder.cpp">
+      <Filter>lzma2107\CPP\7zip\Compress</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\Windows\PropVariantUtils.cpp">
+      <Filter>lzma2107\CPP\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Compress\ZstdDecoder.cpp">
+      <Filter>lzma2107\CPP\7zip\Compress</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\Ppmd8Dec.c">
+      <Filter>lzma2107\C</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\Ppmd8Enc.c">
+      <Filter>lzma2107\C</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\zstd\error_private.c">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\zstd\debug.c">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\zstd\entropy_common.c">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\zstd\fse_compress.c">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\zstd\fse_decompress.c">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\zstd\hist.c">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\zstd\huf_compress.c">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\zstd\huf_decompress.c">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\zstd\pool.c">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\zstd\threading.c">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\zstd\xxhash.c">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\zstd\zstd_common.c">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\zstd\zstd_compress.c">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\zstd\zstd_compress_literals.c">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\zstd\zstd_compress_sequences.c">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\zstd\zstd_compress_superblock.c">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\zstd\zstd_ddict.c">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\zstd\zstd_decompress.c">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\zstd\zstd_decompress_block.c">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\zstd\zstd_double_fast.c">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\zstd\zstd_fast.c">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\zstd\zstd_lazy.c">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\zstd\zstd_ldm.c">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\zstd\zstd_opt.c">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\zstd\zstd_v01.c">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\zstd\zstd_v02.c">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\zstd\zstd_v03.c">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\zstd\zstd_v04.c">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\zstd\zstd_v05.c">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\zstd\zstd_v06.c">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\zstd\zstd_v07.c">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\zstd\zstdmt_compress.c">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Compress\Deflate64Register.cpp">
+      <Filter>lzma2107\CPP\7zip\Compress</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Compress\DeflateDecoder.cpp">
+      <Filter>lzma2107\CPP\7zip\Compress</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Compress\DeflateEncoder.cpp">
+      <Filter>lzma2107\CPP\7zip\Compress</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\CPP\7zip\Compress\DeflateRegister.cpp">
+      <Filter>lzma2107\CPP\7zip\Compress</Filter>
+    </ClCompile>
+    <ClCompile Include="lzma2107\C\HuffEnc.c">
+      <Filter>lzma2107\C</Filter>
+    </ClCompile>
+    <ClCompile Include="CompressUpdateCB.h">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CompressUpdateCB.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="7zHelper.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\7z.h">
+      <Filter>lzma2107\C</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\7zAlloc.h">
+      <Filter>lzma2107\C</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\7zBuf.h">
+      <Filter>lzma2107\C</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\7zCrc.h">
+      <Filter>lzma2107\C</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\7zFile.h">
+      <Filter>lzma2107\C</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\7zTypes.h">
+      <Filter>lzma2107\C</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\7zVersion.h">
+      <Filter>lzma2107\C</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\Aes.h">
+      <Filter>lzma2107\C</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\Alloc.h">
+      <Filter>lzma2107\C</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\Bcj2.h">
+      <Filter>lzma2107\C</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\Bra.h">
+      <Filter>lzma2107\C</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\Compiler.h">
+      <Filter>lzma2107\C</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\CpuArch.h">
+      <Filter>lzma2107\C</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\Delta.h">
+      <Filter>lzma2107\C</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\DllSecur.h">
+      <Filter>lzma2107\C</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\LzFind.h">
+      <Filter>lzma2107\C</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\LzFindMt.h">
+      <Filter>lzma2107\C</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\LzHash.h">
+      <Filter>lzma2107\C</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\Lzma2Dec.h">
+      <Filter>lzma2107\C</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\Lzma2DecMt.h">
+      <Filter>lzma2107\C</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\Lzma2Enc.h">
+      <Filter>lzma2107\C</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\Lzma86.h">
+      <Filter>lzma2107\C</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\LzmaDec.h">
+      <Filter>lzma2107\C</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\LzmaEnc.h">
+      <Filter>lzma2107\C</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\LzmaLib.h">
+      <Filter>lzma2107\C</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\MtCoder.h">
+      <Filter>lzma2107\C</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\MtDec.h">
+      <Filter>lzma2107\C</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\Ppmd.h">
+      <Filter>lzma2107\C</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\Ppmd7.h">
+      <Filter>lzma2107\C</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\Precomp.h">
+      <Filter>lzma2107\C</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\RotateDefs.h">
+      <Filter>lzma2107\C</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\Sha256.h">
+      <Filter>lzma2107\C</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\Sort.h">
+      <Filter>lzma2107\C</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\Threads.h">
+      <Filter>lzma2107\C</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\Xz.h">
+      <Filter>lzma2107\C</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\XzCrc64.h">
+      <Filter>lzma2107\C</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\XzEnc.h">
+      <Filter>lzma2107\C</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Archive\7z\7zCompressionMode.h">
+      <Filter>lzma2107\CPP\7zip\Archive\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Archive\7z\7zDecode.h">
+      <Filter>lzma2107\CPP\7zip\Archive\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Archive\7z\7zEncode.h">
+      <Filter>lzma2107\CPP\7zip\Archive\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Archive\7z\7zFolderInStream.h">
+      <Filter>lzma2107\CPP\7zip\Archive\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Archive\7z\7zHandler.h">
+      <Filter>lzma2107\CPP\7zip\Archive\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Archive\7z\7zHeader.h">
+      <Filter>lzma2107\CPP\7zip\Archive\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Archive\7z\7zIn.h">
+      <Filter>lzma2107\CPP\7zip\Archive\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Archive\7z\7zItem.h">
+      <Filter>lzma2107\CPP\7zip\Archive\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Archive\7z\7zOut.h">
+      <Filter>lzma2107\CPP\7zip\Archive\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Archive\7z\7zProperties.h">
+      <Filter>lzma2107\CPP\7zip\Archive\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Archive\7z\7zSpecStream.h">
+      <Filter>lzma2107\CPP\7zip\Archive\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Archive\7z\7zUpdate.h">
+      <Filter>lzma2107\CPP\7zip\Archive\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Archive\Common\CoderMixer2.h">
+      <Filter>lzma2107\CPP\7zip\Archive\common</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Archive\Common\DummyOutStream.h">
+      <Filter>lzma2107\CPP\7zip\Archive\common</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Archive\Common\HandlerOut.h">
+      <Filter>lzma2107\CPP\7zip\Archive\common</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Archive\Common\InStreamWithCRC.h">
+      <Filter>lzma2107\CPP\7zip\Archive\common</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Archive\Common\ItemNameUtils.h">
+      <Filter>lzma2107\CPP\7zip\Archive\common</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Archive\Common\MultiStream.h">
+      <Filter>lzma2107\CPP\7zip\Archive\common</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Archive\Common\OutStreamWithCRC.h">
+      <Filter>lzma2107\CPP\7zip\Archive\common</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Archive\Common\ParseProperties.h">
+      <Filter>lzma2107\CPP\7zip\Archive\common</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Archive\Common\StdAfx.h">
+      <Filter>lzma2107\CPP\7zip\Archive\common</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Common\CreateCoder.h">
+      <Filter>lzma2107\CPP\7zip\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Common\CWrappers.h">
+      <Filter>lzma2107\CPP\7zip\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Common\FilePathAutoRename.h">
+      <Filter>lzma2107\CPP\7zip\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Common\FileStreams.h">
+      <Filter>lzma2107\CPP\7zip\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Common\FilterCoder.h">
+      <Filter>lzma2107\CPP\7zip\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Common\InBuffer.h">
+      <Filter>lzma2107\CPP\7zip\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Common\InOutTempBuffer.h">
+      <Filter>lzma2107\CPP\7zip\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Common\LimitedStreams.h">
+      <Filter>lzma2107\CPP\7zip\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Common\LockedStream.h">
+      <Filter>lzma2107\CPP\7zip\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Common\MethodId.h">
+      <Filter>lzma2107\CPP\7zip\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Common\MethodProps.h">
+      <Filter>lzma2107\CPP\7zip\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Common\OffsetStream.h">
+      <Filter>lzma2107\CPP\7zip\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Common\OutBuffer.h">
+      <Filter>lzma2107\CPP\7zip\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Common\ProgressUtils.h">
+      <Filter>lzma2107\CPP\7zip\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Common\RegisterArc.h">
+      <Filter>lzma2107\CPP\7zip\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Common\RegisterCodec.h">
+      <Filter>lzma2107\CPP\7zip\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Common\StdAfx.h">
+      <Filter>lzma2107\CPP\7zip\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Common\StreamBinder.h">
+      <Filter>lzma2107\CPP\7zip\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Common\StreamObjects.h">
+      <Filter>lzma2107\CPP\7zip\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Common\StreamUtils.h">
+      <Filter>lzma2107\CPP\7zip\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Common\UniqBlocks.h">
+      <Filter>lzma2107\CPP\7zip\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Common\VirtThread.h">
+      <Filter>lzma2107\CPP\7zip\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Compress\Bcj2Coder.h">
+      <Filter>lzma2107\CPP\7zip\Compress</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Compress\BcjCoder.h">
+      <Filter>lzma2107\CPP\7zip\Compress</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Compress\BranchMisc.h">
+      <Filter>lzma2107\CPP\7zip\Compress</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Compress\CopyCoder.h">
+      <Filter>lzma2107\CPP\7zip\Compress</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Compress\Lzma2Decoder.h">
+      <Filter>lzma2107\CPP\7zip\Compress</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Compress\Lzma2Encoder.h">
+      <Filter>lzma2107\CPP\7zip\Compress</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Compress\LzmaDecoder.h">
+      <Filter>lzma2107\CPP\7zip\Compress</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Compress\LzmaEncoder.h">
+      <Filter>lzma2107\CPP\7zip\Compress</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Compress\PpmdDecoder.h">
+      <Filter>lzma2107\CPP\7zip\Compress</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Compress\PpmdEncoder.h">
+      <Filter>lzma2107\CPP\7zip\Compress</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Compress\StdAfx.h">
+      <Filter>lzma2107\CPP\7zip\Compress</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Compress\XzDecoder.h">
+      <Filter>lzma2107\CPP\7zip\Compress</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Compress\XzEncoder.h">
+      <Filter>lzma2107\CPP\7zip\Compress</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\Common\IntToString.h">
+      <Filter>lzma2107\CPP\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\Common\MyString.h">
+      <Filter>lzma2107\CPP\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\Common\MyVector.h">
+      <Filter>lzma2107\CPP\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\Common\NewHandler.h">
+      <Filter>lzma2107\CPP\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\Common\StringConvert.h">
+      <Filter>lzma2107\CPP\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\Common\StringToInt.h">
+      <Filter>lzma2107\CPP\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\Common\Wildcard.h">
+      <Filter>lzma2107\CPP\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\Windows\FileDir.h">
+      <Filter>lzma2107\CPP\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\Windows\FileFind.h">
+      <Filter>lzma2107\CPP\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\Windows\FileIO.h">
+      <Filter>lzma2107\CPP\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\Windows\PropVariant.h">
+      <Filter>lzma2107\CPP\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\Windows\Synchronization.h">
+      <Filter>lzma2107\CPP\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\Windows\System.h">
+      <Filter>lzma2107\CPP\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\Windows\FileName.h">
+      <Filter>lzma2107\CPP\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Crypto\7zAes.h">
+      <Filter>lzma2107\CPP\7zip\Crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Crypto\MyAes.h">
+      <Filter>lzma2107\CPP\7zip\Crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Crypto\RandGen.h">
+      <Filter>lzma2107\CPP\7zip\Crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Crypto\StdAfx.h">
+      <Filter>lzma2107\CPP\7zip\Crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Archive\Zip\ZipAddCommon.h">
+      <Filter>lzma2107\CPP\7zip\Archive\Zip</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Archive\Zip\ZipCompressionMode.h">
+      <Filter>lzma2107\CPP\7zip\Archive\Zip</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Archive\Zip\ZipHandler.h">
+      <Filter>lzma2107\CPP\7zip\Archive\Zip</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Archive\Zip\ZipHeader.h">
+      <Filter>lzma2107\CPP\7zip\Archive\Zip</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Archive\Zip\ZipIn.h">
+      <Filter>lzma2107\CPP\7zip\Archive\Zip</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Archive\Zip\ZipItem.h">
+      <Filter>lzma2107\CPP\7zip\Archive\Zip</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Archive\Zip\ZipOut.h">
+      <Filter>lzma2107\CPP\7zip\Archive\Zip</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Archive\Zip\ZipUpdate.h">
+      <Filter>lzma2107\CPP\7zip\Archive\Zip</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Compress\PpmdZip.h">
+      <Filter>lzma2107\CPP\7zip\Compress</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Compress\ImplodeDecoder.h">
+      <Filter>lzma2107\CPP\7zip\Compress</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\Ppmd8.h">
+      <Filter>lzma2107\C</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Crypto\WzAes.h">
+      <Filter>lzma2107\CPP\7zip\Crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Crypto\Pbkdf2HmacSha1.h">
+      <Filter>lzma2107\CPP\7zip\Crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Crypto\HmacSha1.h">
+      <Filter>lzma2107\CPP\7zip\Crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Crypto\ZipCrypto.h">
+      <Filter>lzma2107\CPP\7zip\Crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Crypto\ZipStrong.h">
+      <Filter>lzma2107\CPP\7zip\Crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Crypto\Sha1Cls.h">
+      <Filter>lzma2107\CPP\7zip\Crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\Sha1.h">
+      <Filter>lzma2107\C</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Compress\ImplodeHuffmanDecoder.h">
+      <Filter>lzma2107\CPP\7zip\Compress</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Compress\LzOutWindow.h">
+      <Filter>lzma2107\CPP\7zip\Compress</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Compress\ShrinkDecoder.h">
+      <Filter>lzma2107\CPP\7zip\Compress</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Compress\BitlDecoder.h">
+      <Filter>lzma2107\CPP\7zip\Compress</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Compress\BitlEncoder.h">
+      <Filter>lzma2107\CPP\7zip\Compress</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Common\OutMemStream.h">
+      <Filter>lzma2107\CPP\7zip\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Common\ProgressMt.h">
+      <Filter>lzma2107\CPP\7zip\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Common\MemBlocks.h">
+      <Filter>lzma2107\CPP\7zip\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\Common\Common.h">
+      <Filter>lzma2107\CPP\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Archive\IArchive.h">
+      <Filter>lzma2107\CPP\7zip\Archive</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\Common\UTFConvert.h">
+      <Filter>lzma2107\CPP\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Archive\XzHandler.h">
+      <Filter>lzma2107\CPP\7zip\Archive</Filter>
+    </ClInclude>
+    <ClInclude Include="ZipHelper.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\Windows\TimeUtils.h">
+      <Filter>lzma2107\CPP\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Compress\ZstdEncoder.h">
+      <Filter>lzma2107\CPP\7zip\Compress</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\Windows\PropVariantUtils.h">
+      <Filter>lzma2107\CPP\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Compress\ZstdDecoder.h">
+      <Filter>lzma2107\CPP\7zip\Compress</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\zstd\zstd.h">
+      <Filter>lzma2107\C</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\zstd\zstd_errors.h">
+      <Filter>lzma2107\C</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\ICoder.h">
+      <Filter>lzma2107\CPP\7zip</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\zstd\zstd_internal.h">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\zstd\error_private.h">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\zstd\xxhash.h">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\zstd\allocations.h">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\zstd\bits.h">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\zstd\bitstream.h">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\zstd\clevels.h">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\zstd\compiler.h">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\zstd\cpu.h">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\zstd\debug.h">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\zstd\fse.h">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\zstd\hist.h">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\zstd\huf.h">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\zstd\mem.h">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\zstd\pool.h">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\zstd\portability_macros.h">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\zstd\threading.h">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\zstd\zstd_compress_internal.h">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\zstd\zstd_compress_literals.h">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\zstd\zstd_compress_sequences.h">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\zstd\zstd_compress_superblock.h">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\zstd\zstd_cwksp.h">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\zstd\zstd_ddict.h">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\zstd\zstd_decompress_block.h">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\zstd\zstd_decompress_internal.h">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\zstd\zstd_deps.h">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\zstd\zstd_double_fast.h">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\zstd\zstd_fast.h">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\zstd\zstd_lazy.h">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\zstd\zstd_ldm.h">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\zstd\zstd_ldm_geartab.h">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\zstd\zstd_legacy.h">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\zstd\zstd_opt.h">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\zstd\zstd_trace.h">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\zstd\zstd_v01.h">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\zstd\zstd_v02.h">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\zstd\zstd_v03.h">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\zstd\zstd_v04.h">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\zstd\zstd_v05.h">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\zstd\zstd_v06.h">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\zstd\zstd_v07.h">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\zstd\zstdmt_compress.h">
+      <Filter>lzma2107\C\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Compress\DeflateConst.h">
+      <Filter>lzma2107\CPP\7zip\Compress</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Compress\DeflateDecoder.h">
+      <Filter>lzma2107\CPP\7zip\Compress</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Compress\DeflateEncoder.h">
+      <Filter>lzma2107\CPP\7zip\Compress</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\CPP\7zip\Compress\HuffmanDecoder.h">
+      <Filter>lzma2107\CPP\7zip\Compress</Filter>
+    </ClInclude>
+    <ClInclude Include="lzma2107\C\HuffEnc.h">
+      <Filter>lzma2107\C</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="lzma2107\C\7zVersion.rc">
+      <Filter>lzma2107\C</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lzma2107\C\zstd\README.md">
+      <Filter>lzma2107\C\zstd</Filter>
+    </None>
+  </ItemGroup>
+</Project>
