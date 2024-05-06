@@ -1,5 +1,5 @@
-﻿#include <windows.h>
-#include <iostream>
+﻿#include <iostream>
+#include <windows.h>
 #include <tlhelp32.h>
 
 using namespace std;
@@ -75,12 +75,19 @@ int main(char* argc, const char* argv[])
 		return 0;
 	}
 
-	DWORD dwTargetPid = GetPidByName(L"postgres.exe");
+	DWORD dwTargetPid = 0;
+#if 0
+	dwTargetPid = GetPidByName(L"postgres.exe");
 	if (!dwTargetPid)
 	{
 		cout << "Get Target Process Id failed" << endl;
 		return 0;
 	}
+
+#else
+	cout << "输入目标进程 Pid:";
+	cin >> dwTargetPid;
+#endif
 
 	// 打开目标进程
 	HANDLE hTarget = OpenProcess(PROCESS_ALL_ACCESS, false, dwTargetPid);
@@ -101,7 +108,7 @@ int main(char* argc, const char* argv[])
 	}
 
 	// 在申请的内存中写入数据
-	LPCTSTR lpParam = L"C:\\6\\SimpleDll.dll";
+	LPCTSTR lpParam = L"D:\\Documents\\A_Source\\Windows-API-Usage\\Debug\\SimpleDll.dll";
 	if (!WriteProcessMemory(hTarget, pLoadLibFuncParam, (LPCVOID)lpParam, (wcslen(lpParam) + 1) * sizeof(TCHAR), NULL))
 	{
 		cout << "写入内存失败" << endl;
@@ -117,7 +124,7 @@ int main(char* argc, const char* argv[])
 		CloseHandle(hTarget);
 		return 0;
 	}
-	cout << "模块句柄: " << hNtdll << endl;
+	cout << "ntdll 模块句柄: " << hNtdll << endl;
 	void* pLoadLibrary = nullptr;
 	pLoadLibrary = GetProcAddress(hNtdll, "LoadLibraryW");
 	if (pLoadLibrary == nullptr)
@@ -126,6 +133,8 @@ int main(char* argc, const char* argv[])
 		CloseHandle(hTarget);
 		return 0;
 	}
+
+	cout << "目标进程句柄: " << hTarget << endl;
 	cout << "函数地址: " << pLoadLibrary << endl;
 
 	// 在目标进程中创建线程 LoadLibraryW 

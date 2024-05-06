@@ -3,7 +3,9 @@
 
 DWORD WINAPI ThreadProc()
 {
-    MessageBox(NULL, L"我已成功打入敌人内部 By Startu", L"报告首长", 0);
+   //  MessageBox(NULL, L"我已成功打入敌人内部 By Startu", L"报告首长", 0);
+    OutputDebugStringW(L"注入成功");
+    OutputDebugStringA("注入成功");
     return 0;
 }
 
