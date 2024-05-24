@@ -26,7 +26,7 @@ typedef DWORD(WINAPI* typedef_ZwCreateThreadEx)(
 	HANDLE ProcessHandle,
 	LPTHREAD_START_ROUTINE lpStartAddress,
 	LPVOID lpParameter,
-	ULONG CreateThreadFlags,
+	ULONG CreateThreadFlags, 
 	SIZE_T ZeroBits,
 	SIZE_T StackSize,
 	SIZE_T MaximumStackSize,
@@ -176,7 +176,31 @@ int main(int argc, char* argv[])
 	}
 	DWORD dwStatus = 0;
 	HANDLE hRemoteThread = NULL;
-	dwStatus = ZwCreateThreadEx(&hRemoteThread, PROCESS_ALL_ACCESS, NULL, hProcess, (LPTHREAD_START_ROUTINE)pLoadLibraryFunc, lpBaseAddress, 0, 0, 0, 0, NULL);
+#if 0
+	// 第七个参数为0，创建后启动
+	dwStatus = ZwCreateThreadEx(&hRemoteThread,
+		PROCESS_ALL_ACCESS,
+		NULL,
+		hProcess,
+		(LPTHREAD_START_ROUTINE)pLoadLibraryFunc,
+		lpBaseAddress,
+		0,
+		0,
+		0,
+		0,
+		NULL);
+#else
+	DWORD dwThreadId = 0;
+	hRemoteThread = CreateRemoteThreadEx(&hProcess,
+		NULL,
+		NULL,
+		(LPTHREAD_START_ROUTINE)pLoadLibraryFunc,
+		(LPVOID)lpBaseAddress,
+		0,
+		0,
+		&dwThreadId);
+#endif // 0
+
 	if (hRemoteThread == NULL)
 	{
 		printf("[*] Create Remote Thread Error! Error(%x)\n", dwStatus);
