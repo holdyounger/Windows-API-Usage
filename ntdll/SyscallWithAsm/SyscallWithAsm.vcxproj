@@ -134,6 +134,7 @@
     <MASM Include="NtCreateThreadEx.asm">
       <FileType>Document</FileType>
     </MASM>
+    <MASM Include="NtTerminateProcess.asm" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
