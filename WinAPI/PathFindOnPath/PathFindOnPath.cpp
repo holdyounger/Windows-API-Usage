@@ -23,6 +23,11 @@ void GetTempDir()
 
 static inline void GetNewFileName(const CString& path, __out CString& name) {
     int nSaveIdx = 1;
+    CString cfgValue = L"dbPath: C:\\Program Files\\MongoDB\\Server\\7.0\\data";
+
+    CString dataPath = cfgValue.Right(cfgValue.GetLength() - cfgValue.Find(L"dbPath:"));
+    CString dataPath1 = cfgValue.GetString()+CString(L"dbPath: ").GetLength();
+
     CString sTempZipFilePath = path;
     CString sRetName;
     CString strFileName = path.Right(path.GetLength() - path.ReverseFind('\\') - 1);

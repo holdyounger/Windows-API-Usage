@@ -66,14 +66,43 @@ BOOL mysql_password_generate(const char* password, char* hash, int nLen)
 #define BOLDCYAN    "\033[1m\033[36m"      /* Bold Cyan */
 #define BOLDWHITE   "\033[1m\033[37m"      /* Bold White */
 
+#ifndef DETOUR_TRACE
+#if DETOUR_DEBUG
+#define DETOUR_TRACE(x) printf x
+#define DETOUR_BREAK()  __debugbreak()
+#include <stdio.h>
+#include <limits.h>
+#else
+// #define DETOUR_TRACE(x)
+#include <stdio.h>
+#include <string.h>
+// 声明一个辅助函数，用于处理可变参数列表
+static void DebugTraceA(const char* format, ...) {
+    va_list args;
+    va_start(args, format);
+    char buffer[1024] = { 0 };
+    memcpy_s(buffer, 13, "[DNRSP][SDK]", 13);
+    vsprintf_s(buffer + 12, sizeof(buffer) - 12, format, args);
+    va_end(args);
+    OutputDebugStringA(buffer);
+}
+
+// 定义宏，使用DebugTraceA函数输出调试信息
+#define DETOUR_TRACE(x, ...) DebugTraceA(x, ##__VA_ARGS__)
+#define DETOUR_BREAK()
+#endif
+#endif
+
 int main()
 {
     using namespace std;
+    DETOUR_TRACE("Debug:%s", "teset");
     std::string pwd;
     char hash[41];
     std::cout << "Sha1 Hash Generate Tool!\n";
     std::cout << "input pwd>";
     std::cin >> pwd;
+
     while (cin.fail() == false)
     {
         mysql_password_generate(pwd.c_str(), hash, 41);

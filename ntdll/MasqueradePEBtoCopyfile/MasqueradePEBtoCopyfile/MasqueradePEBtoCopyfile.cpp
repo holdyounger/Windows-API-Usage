@@ -646,7 +646,8 @@ int _tmain(int argc, _TCHAR* argv[])
     LPCWSTR DestPath = L"C:\\windows\\System32";
 #endif // 0
 
-    LPCWSTR SourceFullPath = L"C:\\future.exe";
+    // LPCWSTR SourceFullPath = L"C:\\future.exe";
+    LPCWSTR SourceFullPath = L"C:\\Windows\\System32\\cmd.exe";
     LPCWSTR DestPath = L"C:\\windows\\System32";
     HRESULT hr = CoInitializeEx(NULL, COINIT_APARTMENTTHREADED | COINIT_DISABLE_OLE1DDE);
     if (SUCCEEDED(hr)) {

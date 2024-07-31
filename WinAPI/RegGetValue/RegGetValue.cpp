@@ -107,6 +107,9 @@ std::string GetSynchroInfo()
 	return nullptr;
 }
 
+
+vector<wstring> keyName;
+
 void EnumListValue()
 {
 	HKEY hKey = NULL;
@@ -133,7 +136,6 @@ void EnumListValue()
 	DWORD dwType;
 	TCHAR szValueName[MAX_PATH] = { 0 };
 	BYTE szKeyName[MAX_PATH] = { 0 };
-	vector<wstring> keyName;
 
 	int nCount = 0;
 	do
@@ -143,7 +145,7 @@ void EnumListValue()
 		{
 			wprintf(L"Key Name = %s\n", (wchar_t*)szValueName);
 			//wprintf(L"Key Name = %s\n", (wchar_t *)szKeyName);
-			wchar_t wsStr[128];
+			wchar_t wsStr[1024];
 			_wcsncpy_l(wsStr, (wchar_t*)szValueName, sizeof(szValueName) / sizeof(szValueName[0]), 0);
 			keyName.push_back(wsStr);
 
@@ -240,6 +242,9 @@ void main(int argc, char* argv[])
 {
 	
 	std::string strRet;
+	EnumListValue();
+	keyName;
+
 	GetSynchroInfo();
 	// printf("查询结果：%s\n", strRet.c_str());
 	return;
